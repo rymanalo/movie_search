@@ -32,6 +32,12 @@
   <dd>
     <%= @result["imdbRating"] %>
   </dd>
+  <dt>
+    Rotten Tomatoes Rating
+  </dt>
+  <dd>
+    <%= @result["tomatoRating"] %>
+  </dd>
     <dt>
       <%= "Actor" if @directors.size == 1%>
       <%= "Actors" if @directors.size > 1%>
