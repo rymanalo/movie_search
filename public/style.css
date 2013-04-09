@@ -1,0 +1,24 @@
+body {
+  background: black;
+  color: white;
+
+}
+
+h2 {
+  text-align: center;
+}
+
+.poster, .details {
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+}
+
+.poster {
+  margin-right: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #00f;
+}

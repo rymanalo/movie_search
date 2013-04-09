@@ -1,12 +1,17 @@
+
 <h2> <%= @result["Title"] %> 
 (<%= @result["Year"] %>) </h2>
 
+<div class="poster">
 <% if @result["Poster"] == "N/A" %>
 <img src="poster-not-found.jpg">
 <% else %>
 <img src="<%= @result["Poster"] %>" alt="Movie poster for <%= @result["Title"] %>" >
 <% end %>
+</div>
 
+
+<div class="details">
 <p>
   <%= @result["Plot"]%>
 </p>
@@ -65,5 +70,8 @@
     </ul>
   </dd>
 </dl>
+</div>
 
+<br>
 <a href="/search?q=<%= @query %>"> Back to search results for <%= @query %> </a>
+
